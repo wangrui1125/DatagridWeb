@@ -6,3 +6,10 @@ C:\Users\Administrator\documents\visual studio 2010\Projects\WebApplication1\Web
 C:\Users\Administrator\documents\visual studio 2010\Projects\WebApplication1\WebApplication1\obj\Debug\Interop.Microsoft.Office.Interop.Excel.dll
 C:\Users\Administrator\documents\visual studio 2010\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.ResolveComReference.cache
 C:\Users\Administrator\documents\visual studio 2010\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Source\Repos\DatagridWeb\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Source\Repos\DatagridWeb\WebApplication1\obj\Debug\WebApplication1.csproj.ResolveComReference.cache
+C:\Users\Administrator\Source\Repos\DatagridWeb\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Administrator\Source\Repos\DatagridWeb\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Administrator\Source\Repos\DatagridWeb\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\Administrator\Source\Repos\DatagridWeb\WebApplication1\bin\WebApplication1.dll
+C:\Users\Administrator\Source\Repos\DatagridWeb\WebApplication1\bin\WebApplication1.pdb

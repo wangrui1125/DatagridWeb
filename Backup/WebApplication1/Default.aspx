@@ -37,7 +37,7 @@
     <h2>
         &nbsp;</h2>
     <p>
-        欢迎预约<span class="style1"><strong>VSM 漂亮</strong></span></p>
+        欢迎预约<span class="style1"><strong>VSM</strong></span></p>
        <p>
           &nbsp;<asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
            Text="预约" />
