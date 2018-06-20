@@ -17,9 +17,9 @@ namespace WebApplication1
     {
         DataSet objDataset1 = new DataSet();
         string ipadress = "";       
-        string ipkey = "159.226.37.34";
+        //string ipkey = "159.226.37.34";
         //string ipkey= "10.60.2.182";
-        //string ipkey = "127.0.0.1";
+        string ipkey = "127.0.0.1";
         protected void Page_Load(object sender, EventArgs e)
         {            
             //获取ip地址
@@ -64,13 +64,23 @@ namespace WebApplication1
                     }
                 }
                 objDataset1.Tables[0].AcceptChanges();
-
+                //Notic 加载            
+                objCmdSelect = new OleDbCommand("SELECT * FROM [NOTIC] order by id desc", objConn);
+                objAdapter1 = new OleDbDataAdapter();
+                objAdapter1.SelectCommand = objCmdSelect;
+                DataSet objDatasetnotic = new DataSet();
+                objAdapter1.Fill(objDatasetnotic, "XLData");
+                DataRow drinotic = objDatasetnotic.Tables[0].Rows[0];
+                System.DateTime notictime = (System.DateTime)drinotic[1];
+                string noticstr = (string)drinotic[2];
+           
 
                 // Bind data to DataGrid control.
                 if (!IsPostBack)
                 {
                 DataGrid1.DataSource = objDataset1.Tables[0].DefaultView;
-                DataGrid1.DataBind();   
+                DataGrid1.DataBind();
+                Label1.Text = "公告:" + notictime.ToString() + ":<span class=\"style1\">" + noticstr + "</span>";
                 }
 
                 
@@ -186,8 +196,24 @@ namespace WebApplication1
                 {
                     if (index >0)
                     {
+
+                        int change = index - 1;
+                        if (TextBox1.Text != "")
+                        {
+                            int temp = Int16.Parse(TextBox1.Text);
+                            if (index > temp)
+                            {
+                                change = index - temp;
+                            }
+                            else
+                            {
+                                change = 0;
+                            }
+                        }
+
+
                         DataRow dr1 = objDataset1.Tables[0].Rows[index];
-                        DataRow dr2 = objDataset1.Tables[0].Rows[index-1];
+                        DataRow dr2 = objDataset1.Tables[0].Rows[change];
                         string idd1 = dr1[0].ToString();
                         string idd2 = dr2[0].ToString();
 

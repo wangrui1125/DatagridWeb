@@ -12,6 +12,9 @@
             color: #FF0000;
             font-size: medium;
         }
+      
+        
+        
     </style>
 
 <script language="javascript">
@@ -36,13 +39,18 @@
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <h2>
         &nbsp;</h2>
-    <p>
-        欢迎预约<span class="style1"><strong>VSM</strong></span></p>
+    <p>欢迎预约<span class="style1"><strong>VSM</strong></span></p>
+       <marquee>
+           <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></marquee>
+    
        <p>
           &nbsp;<asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
            Text="预约" />
            <asp:Button ID="Button2" runat="server" onclick="Button2_Click" Text="刷新" />
-          <input type="button" name="print" value="打印表格" onclick="preview()"></p>
+          <input type="button" name="print" value="打印表格" onclick="preview()">
+          <asp:Button ID="Button5" runat="server" Text="公告" onclick="Button5_Click1" />
+          </p>
+           
      <!--startprint-->
     <div  id="divdgr" style="Height:500px;Width:auto;OVERFLOW: auto" align="center" >
              <asp:DataGrid ID="DataGrid1" runat="server" 
@@ -78,7 +86,7 @@
 
     </p>
     <p>
-        您还可以找到 <a href="http://go.microsoft.com/fwlink/?LinkID=152368"
+        您还可以找到  您还可以找到 <a href="http://go.microsoft.com/fwlink/?LinkID=152368"
             title="MSDN ASP.NET 文档">MSDN 上有关 ASP.NET 的文档</a>。
     </p>
 </asp:Content>

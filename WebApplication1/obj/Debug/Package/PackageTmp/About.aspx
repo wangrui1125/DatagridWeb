@@ -40,6 +40,10 @@
     <p>
         欢迎预约<span class="style1"><strong>PPMS</strong></span></p>
       <p>
+       <marquee>
+           <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></marquee>
+
+
           &nbsp;<asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="预约" />
           <asp:Button ID="Button2" runat="server" onclick="Button2_Click" Text="刷新" />
           <input type="button" name="print" value="打印表格" onclick="preview()"></p>

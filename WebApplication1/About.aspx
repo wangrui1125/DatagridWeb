@@ -13,6 +13,10 @@
           color: #FF3300;
           font-size: medium;
       }
+      .style2
+      {
+          font-size: medium;
+      }
   </style>
 
 <script language="javascript">
@@ -40,6 +44,10 @@
     <p>
         欢迎预约<span class="style1"><strong>PPMS</strong></span></p>
       <p>
+       <marquee>
+           <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></marquee>
+
+
           &nbsp;<asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="预约" />
           <asp:Button ID="Button2" runat="server" onclick="Button2_Click" Text="刷新" />
           <input type="button" name="print" value="打印表格" onclick="preview()"></p>
@@ -76,6 +84,8 @@
    <!--endprint-->
      <p>
         &nbsp;<asp:Button ID="Button3" runat="server" onclick="Button3_Click" Text="上移" />
+         <asp:TextBox ID="TextBox1" runat="server" Width="33px"></asp:TextBox>
+         <span class="style2">行&nbsp;&nbsp;&nbsp; </span>
          <asp:Button ID="Button4" runat="server" Text="下移" onclick="Button4_Click" />
          <input type="button" name="delete" value="删除" onclick="deletelog()">
          <asp:Button ID="Button6" runat="server" onclick="Button5_Click" Text="Button" CssClass="cssstyle"/>
